@@ -7,7 +7,7 @@ services:
         UID: ${UID:-1000}
         GID: ${GID:-1000}
         USER: ${USER:-dev}
-      context: .
+      context: ../
       dockerfile: Dockerfile
     command: bash -c "echo '' &&
                       nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync' &&
